@@ -1,10 +1,17 @@
 {
-	"/": [],
-	"/blog/posts/[id]": [
-		"src/routes/blog/posts/[id]/+page.js"
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
 	],
-	"/blog/projects": [],
+	"/blog/posts/[id]": [
+		"src/routes/blog/posts/[id]/+page.js",
+		"src/routes/+layout.js"
+	],
+	"/blog/projects": [
+		"src/routes/+layout.js"
+	],
 	"/blog/[tag]": [
-		"src/routes/blog/[tag]/+page.js"
+		"src/routes/blog/[tag]/+page.js",
+		"src/routes/+layout.js"
 	]
 }
