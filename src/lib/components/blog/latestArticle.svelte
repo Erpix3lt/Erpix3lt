@@ -1,4 +1,4 @@
-<script type="ts">
+<script >
     import blogAsJSON from './blog.json'
     import {readingTime} from './time'
 

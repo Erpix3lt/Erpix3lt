@@ -1,7 +1,9 @@
 <script>
+  import { base } from "$app/paths";
 
+       
 </script>
-    <a href="https://maxschmalenbach.herokuapp.com/"><h2>MaxSchmalenbach</h2></a>
+    <a href="{base}/"><h2>MaxSchmalenbach</h2></a>
 <style>
     h2{
         padding-top: .8em;

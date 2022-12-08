@@ -1,6 +1,8 @@
 <script >
     import blogAsJSON from './blog.json'
     import {readingTime} from './time'
+    import { base } from "$app/paths";
+
 
 
     function clickHref(href){
@@ -20,7 +22,7 @@
             <div class="item-border">
         
             <h1 on:click={() => clickHref(post.link)} style="cursor: pointer;">{post.topic}</h1>
-            <a class="tag" href="https://maxschmalenbach.herokuapp.com/blog/{post.tag}">
+            <a class="tag" href="{base}/blog/{post.tag}">
                 #{post.tag}
             </a>
             <p class="description">{post.description}</p>

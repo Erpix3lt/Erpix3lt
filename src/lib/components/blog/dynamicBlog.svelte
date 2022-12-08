@@ -1,4 +1,4 @@
-<script type="ts">
+<script >
     import blogAsJSON from './blog.json'
     import {readingTime} from './time'
 
@@ -9,8 +9,12 @@
 
     try{
         blogAsJSON.forEach(post => {
-            if(post.tag === tag){
+            console.log("json", post)
+            console.log("tag", post.tag)
+            console.log("given tag", tag.tag)
+            if(post.tag === tag.tag){
                 blogAsJSONFiltered.push(post);
+                console.log("success" , blogAsJSONFiltered)
             }
         });
 

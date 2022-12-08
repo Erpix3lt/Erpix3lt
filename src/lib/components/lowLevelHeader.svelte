@@ -1,6 +1,8 @@
 <script>
 import DarkModeButton from "./darkModeButton.svelte";
 import blogAsJSON from './blog/blog.json'
+import { base } from "$app/paths";
+
 
 </script>
     <hr>
@@ -16,13 +18,13 @@ import blogAsJSON from './blog/blog.json'
     </div>
     <hr>
     <div class="latest-tags-wrapper">
-        <a class="tag" href="https://maxschmalenbach.herokuapp.com/blog//{blogAsJSON[0].tag}">
+        <a class="tag" href="{base}/blog/{blogAsJSON[0].tag}">
             #{blogAsJSON[0].tag}
         </a>
-        <a class="tag" href="https://maxschmalenbach.herokuapp.com/blog//{blogAsJSON[1].tag}">
+        <a class="tag" href="{base}/blog/{blogAsJSON[1].tag}">
             #{blogAsJSON[1].tag}
         </a>
-        <a class="tag" href="https://maxschmalenbach.herokuapp.com/blog//{blogAsJSON[2].tag}">
+        <a class="tag" href="{base}/blog/{blogAsJSON[2].tag}">
             #{blogAsJSON[2].tag}
         </a>
     </div>
