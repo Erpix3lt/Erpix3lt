@@ -1,14 +1,16 @@
 <!-- preloader -->
 
 <script context="module">
-    let tag;
-    /** @type {import('./[tag]').Load} */
-    export async function load({params}) {
-        tag = params.tag;
-        console.log("tag" + tag)
+    throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
+
+    // let tag;
+    // /** @type {import('./[tag]').Load} */
+    // export async function load({params}) {
+    //     tag = params.tag;
+    //     console.log("tag" + tag)
 
 		return {props: {tag}}
-    }
+    // }
 </script>
 
 <script lang="ts">
