@@ -6,7 +6,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"deploy": "touch build/.nojekyll && gh-pages -d build -t true"
+		"deploy": "touch docs/.nojekyll && gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -15,5 +15,8 @@
 		"svelte": "^3.53.1",
 		"vite": "^3.2.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"gh-pages": "^4.0.0"
+	}
 }
