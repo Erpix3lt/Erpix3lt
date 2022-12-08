@@ -1,0 +1,1 @@
+let e;async function o({params:t}){return e=t.tag,console.log("tag"+e),{tag:e}}const a=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{a as _,o as l};
