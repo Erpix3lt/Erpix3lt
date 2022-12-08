@@ -3,12 +3,10 @@ let entryById;
 /** @type {import('./[id]').PageLoad} */
 export async function load({params}) {
     let id = params.id;
-    console.log("id" + id)
     const post = blogAsJSON;
     post.forEach(entry => {
         if(entry.id == id){
             entryById = entry;
-            console.log("found post", entry)
         }
     });
     if(entryById == null){

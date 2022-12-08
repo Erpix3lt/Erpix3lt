@@ -12,15 +12,13 @@ import WorkingWith from "./workingWith.svelte";
     <!-- svelte-ignore a11y-img-redundant-alt -->
     <div >
         <h1><mark>HI.</mark></h1>
-        <h3>MaxSchmalenbach.co</h3>
+        <h3>I am Max</h3>
         <p>
-            Hi I am Max! <br>
-            Currently studying at Th-Koeln, <a class="light-hightlighting" href="https://coco.study/">Code and Context</a> .
-            Interested in design, photography, architecture.
+            Currently studying at Th-Koeln, <a class="light-hightlighting" href="https://coco.study/">Code and Context</a> . <br>
+            I am working with SvelteKit, Threejs, Robotframework, Python, StableDiffusion + Dreambooth, WinAppDriver and many other frameworks and tools.
         </p>
         <div class="social">
-            <p>The best place to get a hold of me, is to shoot me a dm on
-            <a href="https://www.instagram.com/maximilianschmalenbach/">instagram</a></p>
+            <p>The best place to get a hold of me, is to write an <a href="mailto: maximilian.schmalenbach@hotmail.com">email</a>.
         </div>
         <WorkingWith/>
     </div>
@@ -60,7 +58,7 @@ import WorkingWith from "./workingWith.svelte";
     }
 
     .light-hightlighting{
-        color: gray;
+        color: #FF9C9C;
         text-decoration: none;
     }
 
