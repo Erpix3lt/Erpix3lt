@@ -4,7 +4,7 @@ import { cookies } from "next/headers"
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 
 const Posts: React.FC = async () => {
-
+  cookies().getAll(); // Keep cookies in the JS execution context for Next.js build
   const supabase = createServerComponentClient({ cookies })
   const { data, error } = await supabase.from("blog").select("*")
 
