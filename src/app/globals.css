@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body  {
+  color: #ffffff;
+  background-color: #000000;
+ }
+
+ .scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none; /* Firefox */
+}
+
+.w-110{
+  width: 550px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.caption{
+  font-size: 9rem;
+  line-height: 9.9rem;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 100%;
+  animation: gradientAnimation 10s ease infinite;
+}
