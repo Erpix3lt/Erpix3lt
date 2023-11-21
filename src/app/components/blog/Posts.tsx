@@ -40,7 +40,6 @@ const Posts: React.FC = async () => {
               caption: post.caption,
               created_at: convertTimestampToFormattedDate(post.created_at),
               description: post.description,
-              thumbnail_url: post.thumbnail_url,
               image_urls: post.image_urls,
               link_urls: post.link_urls,
             }}
