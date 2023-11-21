@@ -25,7 +25,7 @@ const Posts: React.FC = async () => {
   }
 
   // Sort the posts by date in descending order
-  const sortedPosts = data?.toSorted((a, b) => {
+  const sortedPosts = data.sort((a, b) => {
     const dateA = new Date(a.created_at).getTime();
     const dateB = new Date(b.created_at).getTime();
     return dateB - dateA;
